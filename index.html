@@ -1,30 +1,76 @@
+<!DOCTYPE html>
 <html>
     <head>
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="styles/generic.css">
+        <link rel="stylesheet" type="text/css" href="styles/animations.css">
 
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|PT+Sans|Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+
+        <!-- jQuery 3.0 API -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/page.js"></script>
+        <script src="scripts/variables.js"></script>
         
+        <meta charset="utf-8">
+
         <title>Selfdriving Cars</title>
     </head>
     <body>
-        <div id="header">
-            <h1 class ="header">Subba Beile aubbos</h1>
-        </div>
+        <div class="wrapper">
+            <div id="header">
+                <div id="logo">
+                    <h1>Kraus & Kowatschek GmbH</h1>
+                </div>
+                <div id="navigation">
+                    <a href="https://www.google.com">Google</a>
+                    <a href="https://duckduckgo.com">DuckDuckGo</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About Us</a>
+                </div>
+            </div>
 
-        <div id="content">
-            <p>
-                bepis
-            </p>
-                    SELBSTFAHRENDE CARS BEPIS BEWPIS
-            
-        </div>
+            <h1 id="slogan1">Selfdriving Cars</h1>
+            <h2 id="slogan2">Mobility reinvented</h2>
 
-        <div id="footer">
-            <center>
-                <p>&copy; 2018 Samuel Kowatschek & Kraus David. Alle Rechte vorbehalten.</p>
-            </center>
+            <div id="content">
+                <h1 id="title">Title</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+            <div id="footer">
+                <div id="bottomnav">
+                    <center>
+                        <h3>Navigation</h3><br>
+                        <a href="https://www.google.com">Google</a><br>
+                        <a href="https://duckduckgo.com">DuckDuckGo</a><br> 
+                    </center>
+                </div>
+                <div id="footerwrapper">
+                    <div id="copyright">
+                        <p>&copy; {$date} Samuel Kowatschek & Kraus David. All rights reserved.</p>
+                    </div>
+                    <div id="notes">
+                        <center>
+                            <a href="#">Privacy</a><br>
+                            <a href="#">Terms of Use</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
