@@ -5,7 +5,7 @@ $(document).ready(function() {
     //Header
     $("#header").hide();
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 668) {
+        if ($(this).scrollTop() > $(window).height()) {
             $("#header").fadeIn("slow");
         }
         else {
@@ -16,7 +16,7 @@ $(document).ready(function() {
     //Slogan 1
     $("#slogan1").css("visibility", "hidden");
     setTimeout(function() {
-        $("#slogan1").css("visibility", "visible").hide().fadeIn("slow");
+        $("#slogan1").css("visibility", "visible").hide().fadeTo(200, 1);
     }, 400);
 
     //Slogan 2
@@ -24,4 +24,7 @@ $(document).ready(function() {
     setTimeout(function() {
         $("#slogan2").css("visibility", "visible").hide().fadeIn("slow");
     }, 1200);
+
+    //Dynamic content margin
+    $("#slogan2").css("margin-bottom", "calc(100vh - " + $("#slogan"))
 });
