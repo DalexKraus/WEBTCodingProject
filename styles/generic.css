@@ -113,15 +113,19 @@ body {
 }
 
 /* - Gallery - still in work! - */
-#gallery{
-    margin: 5%;
-}
 
 #gallery img{
     height: 50%;
-    width: 40%;
+    width: 48%;
     margin-top:70px;
     margin-bottom:70px;
+    padding-right:50px;
+    padding-left:50px;
+}
+
+#gallery img:hover{
+    transition: .4s;
+    transform: scale(1.24);
 }
 
 /* --- FOOTER --- */
