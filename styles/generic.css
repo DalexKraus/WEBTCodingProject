@@ -89,7 +89,7 @@ body {
 
 /* --- CONTENT --- */
 
-#content {
+#introduction, #gallery {
     height: 100%;
     margin: 0px;
     background-color: #cccccc;
@@ -98,7 +98,7 @@ body {
     padding-left: 128px;
 }
 
-#content h1 {
+#introduction h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 40px;
     padding-top: 75px;
@@ -106,10 +106,22 @@ body {
     margin-left: 20px;
 }
 
-#content p {
+#introduction p {
     font-size:20px;
     font-family: 'Quicksand', sans-serif;
     margin-left: 35px;
+}
+
+/* - Gallery - still in work! - */
+#gallery{
+    margin: 5%;
+}
+
+#gallery img{
+    height: 50%;
+    width: 40%;
+    margin-top:70px;
+    margin-bottom:70px;
 }
 
 /* --- FOOTER --- */
