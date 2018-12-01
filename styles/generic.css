@@ -125,6 +125,7 @@ body {
 #gallery img {
     height: 50%;
     width: 48%;
+    display: block;
     margin-top: 70px;
     margin-bottom: 70px;
     padding-right: 50px;
@@ -213,17 +214,13 @@ section {
     display: table;
 }
 
-section.ok {
-    background-color: #555;
-}
-
 
 /* - Transition - */
 
 .scroll-down {
     opacity: 1;
-    -webkit-transition: all .5s ease-in 3s;
-    transition: all .5s ease-in 3s;
+    -webkit-transition: all .5s ease 3s;
+    transition: all .5s ease 3s;
 }
 
 
