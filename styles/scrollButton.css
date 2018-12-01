@@ -1,6 +1,5 @@
 /* --- Scroll Button ---*/
 
-*,
 :after,
 :before {
     box-sizing: border-box;
@@ -14,13 +13,40 @@
     display: table;
 }
 
+#scrollButton section.ok {
+    background-color: #555;
+}
 
-/* - Transition - */
+
+/* - Transition and Animation - */
 
 .scroll-down {
     opacity: 1;
-    -webkit-transition: all .5s ease 3s;
-    transition: all .5s ease 3s;
+    -webkit-animation: bounce 2.5s infinite 2.5s;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease 3s;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
 }
 
 
