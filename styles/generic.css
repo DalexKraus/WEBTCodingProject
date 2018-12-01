@@ -125,7 +125,6 @@ body {
 #gallery img {
     height: 50%;
     width: 48%;
-    display: block;
     margin-top: 70px;
     margin-bottom: 70px;
     padding-right: 50px;
