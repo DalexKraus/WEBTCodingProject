@@ -24,7 +24,7 @@
     opacity: 1;
     -webkit-animation: bounce 2.5s infinite 2.5s;
     -webkit-transition: all 1s ease;
-    transition: all 1s ease 3s;
+    transition: all 1s ease 2s;
 }
 
 @keyframes bounce {
@@ -53,7 +53,7 @@
 /* - Design - */
 
 .scroll-down {
-    position: relative;
+    position: absolute;
     bottom: 70px;
     left: 50%;
     margin-left: -16px;
@@ -61,8 +61,8 @@
 
 .scroll-down:before {
     position: absolute;
-    top: calc(50% - 8px);
     left: calc(50% - 6px);
+    top: calc(50% - 8px);
     transform: rotate(-45deg);
     display: block;
     width: 40px;
