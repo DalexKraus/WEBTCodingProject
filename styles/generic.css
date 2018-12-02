@@ -178,11 +178,13 @@ body {
     text-align: center;
     text-decoration: none;
     color: #525252;
+    transition: padding-left .5s;
 }
 
 #notes a:hover {
-    text-decoration: underline;
-    transition: text-decoration .1s;
+    text-decoration: none;
+    color: #dbdbdb;
+    padding-left: 25px;
 }
 
 #bottomnav {
