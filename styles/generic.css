@@ -125,9 +125,17 @@ body {
 
 /* - Gallery - still in work! - */
 
+#gallery h1 {
+    padding-top: 75px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 60px;
+    font-family: Quicksand, sans-serif;
+}
+
 #gallery img {
-    height: 50%;
-    width: 48%;
+    height: 25%;
+    width: 20%;
     margin-top: 70px;
     margin-bottom: 70px;
     padding-right: 50px;
@@ -136,7 +144,7 @@ body {
 }
 
 #gallery img:hover {
-    transform: scale(1.3);
+    transform: scale(1.6);
 }
 
 
