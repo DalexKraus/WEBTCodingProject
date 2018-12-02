@@ -53,7 +53,7 @@
 /* - Design - */
 
 .scroll-down {
-    position: absolute;
+    position: relative;
     bottom: 70px;
     left: 50%;
     margin-left: -16px;
