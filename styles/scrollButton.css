@@ -10,11 +10,12 @@
 #scrollButton section {
     height: 100vh;
     width: 100%;
+    position: relative;
     display: table;
 }
 
 #scrollButton section.ok {
-    background-color: #555;
+    z-index: 0;
 }
 
 
@@ -57,6 +58,7 @@
     bottom: 70px;
     left: 50%;
     margin-left: -16px;
+    z-index: 100;
 }
 
 .scroll-down:before {
@@ -70,4 +72,13 @@
     content: "";
     border: 2px solid white;
     border-width: 0px 0 3px 3px;
+}
+
+#scrollButton2 .scroll-down{
+    position: absolute;
+    margin-left: -16px;
+    z-index: 100;
+    left:50%;
+    
+    bottom:-750px;
 }
