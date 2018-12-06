@@ -1,5 +1,6 @@
 /* --- Scroll Button ---*/
 
+
 :after,
 :before {
     box-sizing: border-box;
@@ -52,8 +53,7 @@
 
 
 /* - Design - */
-
-.scroll-down {
+#scrollButton .scroll-down {
     position: absolute;
     bottom: 70px;
     left: 50%;
@@ -61,7 +61,7 @@
     z-index: 100;
 }
 
-.scroll-down:before {
+#scrollButton .scroll-down:before {
     position: absolute;
     left: calc(50% - 6px);
     top: calc(50% - 8px);
@@ -80,5 +80,7 @@
     z-index: 100;
     left:50%;
     
-    bottom:-750px;
+    bottom:-93%;
 }
+
+#scroll
