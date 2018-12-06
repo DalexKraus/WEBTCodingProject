@@ -1,109 +1,97 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="styles/generic.css">
-    <link rel="stylesheet" type="text/css" href="styles/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/scrollButton.css">
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|PT+Sans|Rubik" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
-
-    <!-- jQuery 3.0 API -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/page.js"></script>
-    <script src="scripts/variables.js"></script>
-    <script src="scripts/parallax.js"></script>
-    <script src="scripts/scrolldown.js"></script>
-
-    <meta charset="utf-8">
-
-    <title>Selfdriving Cars</title>
-</head>
-
-<body>
-    <div class="wrapper">
-        <div id="header">
-            <div id="logo">
-                <a href="#">Kraus & Kowatschek</a>
-            </div>
-            <div id="navigation">
-                <a href="#introduction">Introduction</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#bottomnav">Contact</a>
-                <a href="#bottomnav">About Us</a>
-            </div>
-        </div>
-
-        <h1 id="slogan1">Selfdriving Cars</h1>
-        <h2 id="slogan2">Mobility reinvented</h2>
-        <section id="scrollButton">
-            <a href="#" class="scroll-down" address="true"></a>
-        </section>
-
-        <!--Introduction to the theme-->
-
-        <div id="introduction">
-            <section id="scrollButton2" class="ok">
-                <h1>What are self driving cars?</h1>
-                <p>
-                    /*Self driving cars are vehicles that are capable of driving without any human influence or input.
-                    <br>They have Sensor that check their environment.<br>
-                    If there are any obstacles around them, they try to find a way not to hit them.<br>
-                    <br>Most self driving cars today are electric cars as well. But wether the vehicle is electric or not, the technique works mostly the same. Electric cars are just more modern than cars with gasoline.
-                    <br>But there are also hybrid cars which use both - gasoline and electricity.
-                    <section id="scrollButton2">
-                        <a href="#introduction" class="scroll-down" address="true"></a>
-                    </section>*/
-                    This should be a little section with the introduction to what selfdriving cars are etc.
-                </p>
-            </section>
-        </div>
-
-        <!-- Gallery - still in work! -->
-
-        <div id="gallery">
-            <section id="scrollButton2" class="ok">
-                <h1>Gallery</h1>
-                <p>
-                    <img src="images/teslaModelS.jpg" alt="Tesla Model S">
-                    <img src="images/bmwi8.jpg" alt="BMW I8">
-                    <img src="images/googlecar.jpg" alt="Google Car">
-                    <img src="images/mercedes.jpg" alt="Mercedes self-driving car">
-                    <p>Here will be a little gallery with the most influental and most important selfdriving cars.</p>
-                    <p>Later on the page we also wanna include a timeline, and maybe a little game with selfdriving cars. </p>
-                </p>
-            </section>
-        </div>
+    <head>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="styles/generic.css">
+        <link rel="stylesheet" type="text/css" href="styles/scrollbar.css">
+        <link rel="stylesheet" type="text/css" href="styles/scrollButton.css">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|PT+Sans|Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
 
-        <div id="footer">
-            <div id="bottomnav">
-                <center>
-                    <h3>Navigation</h3><br>
-                    <a href="#introduction">Introduction</a><br>
-                    <a href="#gallery">Gallery</a><br>
-                </center>
-            </div>
-            <div id="footerwrapper">
-                <div id="copyright">
-                    <p>&copy; {$date} Kowatschek Samuelk & Kraus David. All rights reserved.</p>
+        <!-- jQuery 3.0 API -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/page.js"></script>
+        <script src="scripts/index_page.js"></script>
+        <script src="scripts/variables.js"></script>
+        <script src="scripts/parallax.js"></script>
+        <script src="scripts/scrolldown.js"></script>
+
+        <meta charset="utf-8">
+
+        <title>Selfdriving Cars</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="header">
+                <div id="logo">
+                    <a href="#">Kraus & Kowatschek</a>
                 </div>
-                <div id="notes">
+                <div id="navigation">
+                    <a href="#introduction">Introduction</a>
+                    <a href="html/gallery.html">Gallery</a>
+                    <a href="#bottomnav">Contact</a>
+                    <a href="#bottomnav">About Us</a>
+                </div>
+            </div>
+
+            <h1 id="slogan1">Selfdriving Cars</h1>
+            <h2 id="slogan2">Mobility reinvented</h2>
+            <section id="scrollButton">
+                <a href="#" class="scroll-down" address="true"></a>
+            </section>
+
+            <!--Introduction to the theme-->
+
+            <div class="introduction">
+                    <h1 id="introduction_headline">What are self driving cars?</h1>
+                    <p>
+                        Self driving cars are vehicles that are capable of driving without any human influence or input.
+                        <br>They have Sensor that check their environment.<br><br>
+                        If there are any obstacles around them, they try to find a way not to hit them.<br>
+                        Most self driving cars today are electric cars as well. But whether the vehicle is electric or not, the technique works mostly the same.
+                        <br>Electric cars are just more modern than cars with gasoline.<br>
+                        <br>But there are also hybrid cars which use both - gasoline and electricity.
+                    </p>
+                </section>
+            </div>
+            <div class="introduction" id="levels">
+                <h3>There are 5 different levels of automation: </h3>
+                <ol>
+                    <li>Driver assistance: Small assisting things like automatic acceleration or something like this. But: everything is under Human control! </li>
+                    <li>Partial Automation: This is what some of the Tesla Vehicles have. The car can also automatically take safety actions. But still, a human has to stay alert at the wheel. </li>
+                    <li>Conditional automation: This level still requires a human driver, but the human is able to put some “safety-critical functions” to the vehicle, under certain traffic or environmental conditions.
+                         But: This poses some safety issues because the human driver passes the major task of driving to or from the car itself. </li>
+                    <li>High automation: A car that can drive itself almost all the time without any human input, but might be programmed not to drive in unmapped areas or during severe weather. This is a car you could sleep in.</li>
+                    <li>Full automation: This means full automation in every condition. This does have much less safety issues than any other form of driving. </li>
+                </ol>
+            </div>
+            <div id="footer">
+                <div id="bottomnav">
                     <center>
-                        <a href="#">Privacy</a><br>
-                        <a href="#">Terms of Use</a>
+                        <h3>Navigation</h3><br>
+                        <a href="#introduction">Introduction</a><br>
+                        <a href="html/gallery.html">Gallery</a><br>
                     </center>
                 </div>
-            </div>
+                <div id="footerwrapper">
+                    <div id="copyright">
+                        <p>&copy; {$date} Kowatschek Samuelk & Kraus David. All rights reserved.</p>
+                    </div>
+                    <div id="notes">
+                        <center>
+                            <a href="#">Privacy</a><br>
+                            <a href="#">Terms of Use</a>
+                        </center>
+                    </div>
+                </div>
 
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>

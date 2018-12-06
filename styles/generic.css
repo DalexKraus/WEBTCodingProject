@@ -21,7 +21,6 @@ body {
     margin-top: 0px;
 }
 
-
 /* --- HEADER --- */
 
 #header {
@@ -98,29 +97,43 @@ body {
 
 /* --- CONTENT --- */
 
-#introduction,
+.introduction,
 #gallery {
-    height: 100%;
     margin: 0px;
     background-color: #cccccc;
     margin-top: calc(100vh - (50vh + 48px + 32px + 12px));
+    padding-bottom: 64px;
     padding-right: 128px;
     padding-left: 128px;
 }
 
-#introduction h1 {
-    font-family: 'Quicksand', sans-serif;
+#levels{
+    background-color: #adadad;
+}
+
+.introduction h1, h3 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     padding-top: 75px;
     padding-bottom: 16px;
-    margin-left: 20px;
 }
 
-#introduction p {
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+.introduction h3 {
+    font-size: 26px;
+    padding-top: 64px;
+    color: #858585;
+}
+
+.introduction p, ol {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     margin-left: 35px;
+}
+
+.introduction ol{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: upper-roman;
 }
 
 
