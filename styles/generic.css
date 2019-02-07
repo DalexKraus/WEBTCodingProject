@@ -241,9 +241,11 @@ a:hover{
 }
 
 #bottomnav h3 {
+    font-size: 20px;
     padding-top:0px;
     margin-top:10px;
     margin-bottom: 0px;
+    padding-bottom: 0px;
     color: #2c2c2c;
 }
 
