@@ -1,59 +1,66 @@
 body {
-    overflow:hidden;
-    margin: 0;
+  background: url("../images/forest-background.jpg");
+  overflow:hidden;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Digital-7";
+  src: url("../digital-7.ttf");
 }
 
 #mainback {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .images {
-  float: left;
-  height: 19%;
-  width: 100%;
-  padding: 5px;
+float: left;
+height: 19%;
+width: 100%;
+padding: 5px;
 
 }
 
 .imagess {
-  padding-top: 12%;
-  padding-left: 1%;
-  padding-right: 1%;
-  width: 18%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3vw;
-  float: left;
+padding-top: 0;
+padding-left: 1%;
+padding-right: 1%;
+width: 18%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 1.6vw;
+float: left;
 }
 
 .buttons {
-  margin-left: 45%;
+margin-left: 45%;
 }
 
 button {
-  font-size: 25px;
- font-family: digital-7;
-  background-color: black;
-  width: 10%;
-  height: 40px;
-  border: none;
-  color: rgba(255,255,255,1);
+font-size: 25px;
+font-family: digital-7;
+background-color: black;
+width: 10%;
+height: 40px;
+border: none;
+color: rgba(255,255,255,1);
 -o-text-overflow: clip;
 text-overflow: clip;
-margin-top: 15%;
+margin-top: 6%;
 transition: 0.5s;
-text-shadow: 0 0 10px #27ff00 , 0 0 20px #27ff00 , 0 0 30px rgba(255, 255, 255, 0) , 0 0 40px rgba(0, 255, 49, 0) , 0 0 70px rgba(39, 255, 0, 0.22) , 0 0 80px rgba(0, 255, 29, 0.69) , 0 0 100px rgba(0, 255, 10, 0) ;
-  }
+text-shadow: 0 0 10px #979797 , 0 0 20px #979797 , 0 0 30px rgba(255, 255, 255, 0) , 0 0 40px rgba(0, 255, 49, 0) , 0 0 70px #9797975d , 0 0 80px rgba(146, 146, 146, 0.69) , 0 0 100px rgba(0, 255, 10, 0) ;
+
+}
 
 button:hover {
-  transform: scale(1.2);
+transform: scale(1.2);
 }
