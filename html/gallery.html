@@ -1,9 +1,9 @@
- <html>
-     <head>
-         <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="../styles/generic.css">
+<html>
+
+<head>
+    <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../styles/scrollButton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/slideshow.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|PT+Sans|Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
@@ -14,18 +14,20 @@
 
     <!-- jQuery 3.0 API -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
     <script src="scripts/variables.js"></script>
     <script src="scripts/parallax.js"></script>
     <script src="scripts/scrolldown.js"></script>
+    <!-- <script src="scripts/slideshow.js"></script> -->
 
     <meta charset="utf-8">
 
     <title>Selfdriving Cars</title>
-     </head>
- 
- 
- <!-- Gallery - still in work! -->
+</head>
+
+
+<!-- Gallery - still in work! -->
+
 <body>
     <div class="wrapper">
         <div id="header">
@@ -40,42 +42,98 @@
             </div>
         </div>
     </div>
-    <div id="gallery">
-    <section id="scrollButton2" class="ok">
-        <h1>Gallery</h1>
-        <p>
-            <img src="../images/teslaModelS.jpg" alt="Tesla Model S">
-            <img src="../images/bmwi8.jpg" alt="BMW I8">
-            <img src="../images/googlecar.jpg" alt="Google Car">
-            <img src="../images/mercedes.jpg" alt="Mercedes self-driving car">
-            <p>Here will be a little gallery with the most influental and most important selfdriving cars.</p>
-            <p>Later on the page we also wanna include a timeline, and maybe a little game with selfdriving cars. </p>
-            
-        </p>
-    </section>
+    <div class="images">
+        <img id="img1" src="../images/bmwi8.jpg" alt="" class="imagess">
+        <img id="img2" src="../images/googlecar.jpg" alt="" class="imagess">
+        <img id="img3" src="../images/mercedes.jpg" alt="" class="imagess">
+        <img id="img4" src="../images/teslaModelS.jpg" alt="" class="imagess">
+    </div>
+
+    <form class="buttons">
+        <button type="button" name="button_left" onclick="goLeft()">GO LEFT</button>
+        <button type="button" name="button_left" onclick="goRight()">GO RIGHT</button>
+    </form>
 
     <div id="footer">
-            <div id="bottomnav">
+        <div id="bottomnav">
+            <center>
+                <h3>Navigation</h3><br>
+                <a href="#introduction">Introduction</a><br>
+                <a href="html/gallery.html">Gallery</a><br>
+            </center>
+        </div>
+        <div id="footerwrapper">
+            <div id="copyright">
+                <p>&copy; {$date} Kowatschek Samuelk & Kraus David. All rights reserved.</p>
+            </div>
+            <div id="notes">
                 <center>
-                    <h3>Navigation</h3><br>
-                    <a href="#introduction">Introduction</a><br>
-                    <a href="html/gallery.html">Gallery</a><br>
+                    <a href="#">Privacy</a><br>
+                    <a href="#">Terms of Use</a>
                 </center>
             </div>
-            <div id="footerwrapper">
-                <div id="copyright">
-                    <p>&copy; {$date} Kowatschek Samuelk & Kraus David. All rights reserved.</p>
-                </div>
-                <div id="notes">
-                    <center>
-                        <a href="#">Privacy</a><br>
-                        <a href="#">Terms of Use</a>
-                    </center>
-                </div>
-            </div>
-
         </div>
-</div>
-</div>
+
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+            
+        let imageArray = new Array();
+        let help;
+        
+
+        for(i = 0; i < document.images.length ; i++){
+            imageStart[i] = document.images[i].src;
+        }
+        
+    
+      function goRight(){
+          
+               
+                for(var i = 0; i < document.images.length; i++){
+                    imageArray[i] = document.images[i].src;
+                }
+          
+        
+                help = imageArray[document.images.length - 1];
+          
+                for(var i = document.images.length - 1; i >= 0; i--){
+                    
+                    if(i == 0){
+                        document.images[i].src = help;
+                    } else {
+                        document.images[i].src = imageArray[i - 1];
+                    }   
+                }
+            }
+
+      
+        function goLeft(){
+                
+                for(var i = 0; i < document.images.length; i++){
+                    imageArray[i] = document.images[i].src;
+                }
+            
+                help = imageArray[0];
+            
+                for(var i = 0; i < document.images.length; i++){
+                    
+                    if(i == document.images.length - 1){
+                        document.images[i].src = help;
+                    } else {
+                        document.images[i].src = imageArray[i + 1];
+                    }
+                    
+                }
+            
+            document.images[1].src.style.transform = "scale(0.5)"
+        document.images[2].src.style.transform = "scale(0.7 , 0.7)"
+        document.images[3].src.style.transform = "scale(1,1)"
+        document.images[4].src.style.transform = "scale(0.7 , 0.7)"
+            
+             }
 </body>
+
 </html>

@@ -260,13 +260,13 @@ a:hover{
     height: 64px;
     display: inline-block;
     position: relative;
-    transition: padding-bottom .1s; 
   }
   #dropdown a{                  /*The buttons / links in the dropdown menu*/
-    background-color: red;
-    margin: 0;
-    padding: 0px 50px;            /*This padding exists so that every item in the menu is in a new line*/
-    padding-bottom: 0px; 
+    background-color: #696969;
+    min-width: 160px; 
+    margin: 0 !important;
+    padding: 0px 50px /*!important*/;            /*This padding exists so that every item in the menu is in a new line*/
+    padding-bottom: 0px !important; 
   }
 
   #dropdown a:hover{
@@ -276,11 +276,13 @@ a:hover{
   .dropdown-content {       /*The background on which all the links are placed*/
     display: none;
     position: absolute;
-    background-color: #696969;   
+    background-color: #696969;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
     padding: 12px 0px;
     margin-left: -25px;
+    padding-left: 0;
+    padding-right: 0;
     z-index: 1;
   }
 

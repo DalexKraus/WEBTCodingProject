@@ -1,4 +1,3 @@
-
 let imageArray = new Array();
 let help;
 
@@ -25,7 +24,12 @@ function goRight() {
         } else {
             document.images[i].src = imageArray[i - 1];
         }
+
     }
+
+
+
+
 }
 
 
