@@ -156,33 +156,6 @@ a:hover{
     font-family: 'Open Sans', sans-serif;
     list-style-type: upper-roman;
 }
-
-
-/* - Gallery - still in work! - */
-
-#gallery h1 {
-    padding-top: 75px;
-    padding-bottom: 16px;
-    text-align: center;
-    font-size: 60px;
-    font-family: Quicksand, sans-serif;
-}
-
-#gallery img {
-    height: 25%;
-    width: 20%;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    padding-right: 50px;
-    padding-left: 50px;
-    transition: transform .5s;
-}
-
-#gallery img:hover {
-    transform: scale(1.6);
-}
-
-
 /* --- FOOTER --- */
 
 #footer {

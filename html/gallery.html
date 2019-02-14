@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+
 <head>
+    <!-- jQuery 3.0 API -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/index_page.js"></script>
+    <script src="../scripts/variables.js"></script>
+    <script src="../scripts/parallax.js"></script>
+    <script src="../scripts/scrolldown.js"></script>
     <meta charset="utf-8">
+    <title>Selfdriving Cars</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>S.P.A.C.E. 1991</title>
-    <meta name="description" content="A PICTURE SLIDESHOW">
     <link rel="stylesheet" href="../styles/slideshow.css">
+    <link rel="stylesheet" href="../styles/generic.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|PT+Sans|Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 <body>
-    <div class="images">
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <a href="../index.html">Kraus & Kowatschek</a>
+            </div>
+            <div id="navigation">
+                <a href="../index.html">Introduction</a>
+                <a href="gallery.html">Gallery</a>
+                <div id="dropdown" class="dropdown">
+                    <span>The different Levels</span>
+                    <div class="dropdown-content">
+                        <a id="dropdown" href="level1.html">Level 1</a>
+                        <a id="dropdown" href="level2.html">Level 2</a>
+                        <a id="dropdown" href="level3.html">Level 3</a>
+                        <a id="dropdown" href="level4.html">Level 4</a>
+                        <a id="dropdown" href="level5.html">Level 5</a>
+                    </div>
+                </div>
+                <a href="#bottomnav">Contact</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+            <div >
+                <form class="buttons">
+                    <button type="button" name="button_left" onclick="goLeft()">GO LEFT</button>
+                    <button type="button" name="button_left" onclick="goRight()">GO RIGHT</button>
+                </form>
 
-        <img id="img1" src="artworks/bilder/bild1.jpg" alt="" class="imagess">
-
-        <img id="img2" src="artworks/bilder/bild2.jpg" alt="" class="imagess">
-        <img id="img3" src="artworks/bilder/bild3.jpg" alt="" class="imagess">
-
-        <img id="img4" src="artworks/bilder/bild4.jpg" alt="" class="imagess">
-
-        <img id="img5" src="artworks/bilder/bild5.jpg" alt="" class="imagess">
+                <div class="images">
+                    <img id="img1" src="artworks/bilder/bild1.jpg" alt="" class="imagess">
+                    <img id="img2" src="artworks/bilder/bild2.jpg" alt="" class="imagess">
+                    <img id="img3" src="artworks/bilder/bild3.jpg" alt="" class="imagess">
+                    <img id="img4" src="artworks/bilder/bild4.jpg" alt="" class="imagess">
+                    <img id="img5" src="artworks/bilder/bild5.jpg" alt="" class="imagess">
+                </div>
+            </div>
+            
 
     </div>
-    <div class="imagetext">
-        <div id="imgtext1">aaaaaaaaaaaaaaaaaaaaaaa</div>
-        <div id="imgtext2">ssssssssssssssssss</div>
-        <div id="imgtext3">dddddddddddddddddddddddddd</div>
-        <div id="imgtext4">eeeeeeeeeeeeeeeeeeeeeeeee</div>
-        <div id="imgtext5">fffffffffffffffffffffffff</div>
-    </div>
-
-    <form class="buttons">
-        <button type="button" name="button_left" onclick="goLeft()">GO LEFT</button>
-        <button type="button" name="button_left" onclick="goRight()">GO RIGHT</button>
-    </form>
-
-
 
     <script type="text/javascript">
 
