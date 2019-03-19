@@ -20,22 +20,31 @@
     <script language="javascript" type="text/javascript" src="Car.js"></script>
     <script language="javascript" type="text/javascript" src="Ground.js"></script>
     <script language="javascript" type="text/javascript" src="Person.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../styles/generic.css">
 </head>
 <body>
 
-    <div id = "main">
+    <div id = "game">
       <h2> Hill Climb Racing </h2>
       <div id = "canvas">
       </div>
   </div>
 
+  <div id="gameParagraph">
+    <h3 id="game">Info for functions</h3>
+    <p>
+        Press <code>P</code> to play the game by yourself for 1 lap
+        <br>
+        Press <code>G</code> to show every best player of each generation.
+        <br>
+        Press <code>F</code> to fight against the best Player the A.I. produced.
+        <br>
+      </p>
+    </div>
+
 
   <script>
-    //center the canvas
-    var tempString = ""+((window.innerWidth*0.9- 1026 - window.innerWidth*0.9*0.08 )/2)+ "px";
-    document.getElementById("main").style.marginLeft = tempString;
-
-
     window.onresize = function(event) {
       var tempString = ""+((window.innerWidth*0.9- 1026 - window.innerWidth*0.9*0.08 )/2)+ "px";
       document.getElementById("main").style.marginLeft = tempString;

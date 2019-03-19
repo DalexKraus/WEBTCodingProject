@@ -265,6 +265,14 @@ a:hover{
     background-color: #69696933;
 }
 
+#game{
+    color: white;
+}
+
+#gameParagraph{
+    margin-left: 1400px;
+}
+
 
 .dropdown:hover .dropdown-content {
     display: block;
