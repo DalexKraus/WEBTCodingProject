@@ -93,8 +93,6 @@ a:hover {
     font-weight: 800;
     font-family: Montserrat;
 }
-
-
 /* --- SLOGAN --- */
 
 #slogan1,
@@ -284,32 +282,45 @@ ol {
     background-color: #69696933;
 }
 
-#game {
+#game{
     margin: 0;
-    color: white;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 30px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
 }
 
-#game h3 {
-    font-size: 25px;
+#p5_loading{
+    align: center;
 }
 
 #gameParagraph {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0;
+    margin-top: 400;
+    margin-left: 1350px;
     color: white;
-    z-index: -1;
-    left: 100px;
-    right: 1000px;
+    position: absolute;
+    float: right;
 }
+
+#canvas{
+    margin-left: 20px;
+    margin-top: 50px;
+    width:1280px;
+    float: left;
+}
+
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-#canvas div {
-    width: 75%;
-    margin-left: 0;
-    padding-left: 0;
-    border-left: 0;
-}
+
 
 @media (max-width: 600px) {
     * {

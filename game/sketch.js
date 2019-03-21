@@ -118,8 +118,8 @@ var grassSprites = [];
 var otherWorld; // for human, gen replay, species, best
 var worlds = [];
 var grounds = [];
-var numberOfWorlds = 3;
-var playersPerWorld = 60;
+var numberOfWorlds = 5;
+var playersPerWorld = 30;
 
 
 var skySprite;
@@ -225,7 +225,7 @@ function preload() {
 function setup() {
     window.canvas = createCanvas(1280, 720);
     canvas.parent("canvas");
-    frameRate(30); //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<FRAME RATE
+    frameRate(60); //changes the framerate
 
 
     groundTemplate = new Ground();
