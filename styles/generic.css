@@ -293,7 +293,11 @@ ol {
 }
 
 #p5_loading{
-    align: center;
+    text-align: center;
+    color: black;
+    position: fixed;
+    margin-left: 35%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #gameParagraph {
