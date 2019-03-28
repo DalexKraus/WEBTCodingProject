@@ -307,6 +307,8 @@ function draw() {
             humanPlayer.look();
 
         } else { //once done return to ai
+            let sc = humanPlayer.score;
+            console.log('Endscore: ' + sc);
             humanPlaying = false;
         }
     } else
