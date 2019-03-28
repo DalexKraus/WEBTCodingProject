@@ -308,6 +308,9 @@ function draw() {
 
         } else { //once done return to ai
             let sc = humanPlayer.score;
+            var request = new XMLHttpRequest();
+            request.open('POST', 'http://localhost:3000/score.json',true);
+            request.send(sc);
             console.log('Endscore: ' + sc);
             humanPlaying = false;
         }
