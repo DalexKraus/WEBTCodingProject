@@ -293,10 +293,11 @@ ol {
 }
 
 #p5_loading{
-    text-align: center;
+    text-align: right;
     color: black;
     position: fixed;
     margin-left: 35%;
+    font-size: 250%;
     font-family: 'Montserrat', sans-serif;
 }
 
