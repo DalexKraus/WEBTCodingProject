@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../styles/generic.css">
+    <link rel="stylesheet" type="text/css" href="../styles/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../styles/scrollButton.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|PT+Sans|Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+
+    <!-- jQuery 3.0 API -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/index_page.js"></script>
+    <script src="../scripts/variables.js"></script>
+    <script src="../scripts/parallax.js"></script>
+    <script src="../scripts/scrolldown.js"></script>
+
+    <meta charset="utf-8">
+
+    <title>Selfdriving Cars</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <a href="../index.html">Kraus & Kowatschek</a>
+            </div>
+            <div id="navigation">
+                <a href="../index.html">Introduction</a>
+                <a href="gallery.html">Gallery</a>
+                <div id="dropdown" class="dropdown">
+                    <span>The different Levels</span>
+                    <div class="dropdown-content">
+                        <a id="dropdown" href="level1.html">Level 1</a>
+                        <a id="dropdown" href="level2.html">Level 2</a>
+                        <a id="dropdown" href="level3.html">Level 3</a>
+                        <a id="dropdown" href="level4.html">Level 4</a>
+                        <a id="dropdown" href="level5.html">Level 5</a>
+                    </div>
+                </div>
+                <a href="#bottomnav">Contact</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+
+        <div class="introduction">
+            <h2>Project Charter</h2>
+            <p>
+                This is the project charter for our website, but mainly our web-app.<br>
+                <h3>The Client</h3>
+                <p>
+                    The client for this project ist David Klewein, our Teacher in Web Development.
+                </p>
+                <h3>The project managers</h3>
+                <p>
+                    The project managers are David Kraus and Samuel Kowatschek. To find out more about us, visit the <a href="about.html">about</a> page.
+                    <br>We make this project as a part of a school project in the subject Web Development.
+                </p>
+            </p>
+        </div>
+        <div class="introduction">
+            <h3>The project</h3>
+                <p>
+                    The project is about self-driving cars, especially about the different level of autonomous vehicles.
+                    The goals of the project is to learn more about self-driving cars and also learn game mechanics as well 
+                    <br> as Artificial Intelligence and Machine learning for our web-app, which I will discuss in the next point.
+                </p>
+        </div>
+
+        <div class="introduction">
+            <h3>The web-app</h3>
+            <p>
+                The web-app, which you can find <a href="../game/game.html">here</a> is a game with an AI. We didn't program the game fully by ourselfes, but we know very good how it works and what it does.
+                <br>The game is a copy of the populuar mobile game HillClimbRacing. The player is in a 2D Landscape and sits in the car, and only with braking and stepping on the gas you have to
+                <br>get as far as possible. The landscape goes onto infinity.
+                <br>Because this isn't really what a self-driving cars defines, we figured we would just put an A.I. on it. 
+                <br>The principe we used is called N.E.A.T. NEAT stands for NeuroEvolution of Augmenting Topologies. The thing about NEAT is, it goes after natural selection.
+                <br>That means that if I had 100 cars in one Generation, the 50 worst cars get killed and new cars are being created that learn from their ancestors mistakes.
+                <br>That's exactly what our game does. Per Generation we have 50 "players" which are essentially just different AIs. Each of them just trys to brake or to step on the gas.<br>
+                <br>After each generation the A.I. gets better and better. You can always try it yourself by pressing "P", Fight against the AI by pressing "F" after the first generation, or press "G" to see the <br>the best A.I. generated so far.
+                <br>Of course you can also stop the game by pressing "P".
+            </p>
+        </div>
+        
+        <div id="footer">
+            <div id="bottomnav">
+                <center>
+                    <h3>Navigation</h3><br>
+                    <a href="../introduction">Introduction</a><br>
+                    <a href="gallery.html">Gallery</a><br>
+                    <a href="level1.html">Level 1</a><br>
+                    <a href="level2.html">Level 2</a><br>
+                    <a href="level3.html">Level 3</a><br>
+                    <a href="level4.html">Level 4</a><br>
+                    <a href="level5.html">Level 5</a><br>
+                    <a href="about.html"></a>
+                </center>
+            </div>
+
+            <div id="footerwrapper">
+                <div id="copyright">
+                    <p>&copy;2019 Kowatschek Samuel & Kraus David. All rights reserved.</p>
+                </div>
+                <div id="notes">
+                    <center>
+                        <a href="#">Privacy</a><br>
+                        <a href="#">Terms of Use</a>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
