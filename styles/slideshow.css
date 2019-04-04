@@ -1,15 +1,20 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+
+}
 body {
+  font-family: 'Montserrat', sans-serif;
   background: url("../images/forest-background.jpg");
   overflow:hidden;
   margin: 0;
 }
 
 @font-face {
-  font-family: "Digital-7";
-  src: url("../digital-7.ttf");
+  font-family: 'Montserrat', sans-serif;
 }
 
 #mainback {
+  
   position: fixed;
   top: 50%;
   left: 50%;
@@ -22,6 +27,8 @@ body {
 }
 
 .images {
+  font-family: 'Montserrat', sans-serif;
+
 float: left;
 height: 19%;
 width: 100%;
@@ -34,10 +41,7 @@ padding-top: 0;
 padding-left: 1%;
 padding-right: 1%;
 width: 18%;
-/*display: flex;
-justify-content: center;
-align-items: center;
-*/align-self: center;
+align-self: center;
 margin-top: 5vw;
 float: left;
 transition: 0.5s;
@@ -54,8 +58,8 @@ text-overflow: clip;
 }
 
 button {
+  font-family: 'Montserrat', sans-serif;
 font-size: 70px;
-font-family: digital-7;
 background-color: rgba(255, 255, 255, 0);
 box-shadow: 0 0 10px #979797 , 0 0 20px #979797 , 0 0 30px rgba(255, 255, 255, 0) , 0 0 40px rgba(0, 255, 49, 0) , 0 0 70px #9797975d , 0 0 80px rgba(146, 146, 146, 0.69) , 0 0 100px rgba(0, 255, 10, 0) ;
 width: 30%;
@@ -73,6 +77,8 @@ text-shadow: 0 0 10px #979797 , 0 0 20px #979797 , 0 0 30px rgba(255, 255, 255, 
 }
 
 button:hover {
+  font-family: 'Montserrat', sans-serif;
+
 text-shadow: 0 0 10px #ff0000 , 0 0 20px #f06262 , 0 0 30px rgba(255, 255, 255, 0) , 0 0 40px rgba(0, 255, 49, 0) , 0 0 70px #9797975d , 0 0 80px rgba(146, 146, 146, 0.69) , 0 0 100px rgba(0, 255, 10, 0) ;
 transform: scale(1.2);
 }
