@@ -118,8 +118,8 @@ var grassSprites = [];
 var otherWorld; // for human, gen replay, species, best
 var worlds = [];
 var grounds = [];
-var numberOfWorlds = 5;
-var playersPerWorld = 30;
+var numberOfWorlds = 1;
+var playersPerWorld = 50;
 
 
 var skySprite;
@@ -467,8 +467,7 @@ function writeInfo() {
 
             text("Species: " + population.species.length, 50, 150);
             text("Global Best Score: " + population.globalBestScore, 50, 200);
-            text("Species: " + population.species.length, 50, canvas.height / 2 + 300);
-            text("Global Best Score: /" + max(population.bestScore, currentBestPlayer.score), 50, canvas.height / 2 + 200);
+           
         }
     }
 }
