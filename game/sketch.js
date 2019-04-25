@@ -651,11 +651,4 @@ function newWorlds() {
 
     population.bestScore = 0; //the score of the best ever player
     population.globalBestScore = 0;
-
-
-    //
-    // ground = new Ground(world);
-    // ground.cloneFrom(groundTemplate);
-    // ground.setBodies(world); //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<replace
-    // world.SetContactListener(listener);
 }
