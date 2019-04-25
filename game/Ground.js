@@ -62,7 +62,6 @@ class Ground {
       }
 
     }
-    console.log(totalDifference);
 
     this.vectors.push(new Vec2(this.distance, canvas.height + this.grassThickness * 2));
     this.vectors.push(new Vec2(0, canvas.height + this.grassThickness * 2));

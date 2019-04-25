@@ -179,11 +179,7 @@ listener.BeginContact = function(contact) {
     }
 }
 
-//
-// listener2.BeginContact = function(contact) {
-//
-//
-// }
+
 listener.EndContact = function(contact) {
 
     if (contact.GetFixtureA().GetBody().GetUserData().id == "wheel") {
@@ -362,7 +358,6 @@ function draw() {
     let tempMult = 1;
     if (abs(targetPanX - panX) > 20 * panSpeed) {
         tempMult = 5; //floor(abs(targetPanX - panX) / 60);
-        console.log(tempMult);
     }
     if (abs(targetPanX - panX) < panSpeed * tempMult) {
         panX = targetPanX;
