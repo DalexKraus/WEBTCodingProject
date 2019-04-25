@@ -629,7 +629,6 @@ function newWorlds() {
         groundTemplate = new Ground();
         groundTemplate.randomizeGround();
     }
-    console.log(groundTemplate.vectors);
 
     grounds = [];
     worlds = [];

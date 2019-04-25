@@ -75,6 +75,9 @@ class Ground {
 
   }
 
+  /*
+  *  Checks if the generated ground is too steep.
+  */
   isTooSteep() {
 
     for (var v of this.vectors) {
@@ -84,18 +87,11 @@ class Ground {
       for (var i = 1; i < oi.length; i++) {
         totalDifference += max(0, oi[i - 1] - oi[i]);
       }
-
       if (totalDifference > 5) {
-        console.log("shit ground");
         return true;
-
       }
-
     }
-
     return false;
-
-
   }
 
 
