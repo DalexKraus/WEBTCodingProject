@@ -306,6 +306,7 @@ function draw() {
             let sc = "{\"name\": \"" + Math.random() + "\", \"score\": \"" + humanPlayer.score + "\"}";
             var request = new XMLHttpRequest();
             request.open('POST', 'http://localhost:3000/posts',true);          //should store the player scores in the score.json file
+            request.setRequestHeader("Content-Type", "application/json");
             request.send(sc);
             console.log('Endscore: ' + sc);
             humanPlaying = false;
