@@ -130,13 +130,13 @@ class Ground {
     translate(-panX, -panY);
 
     for (var i = 0; i < this.vectors.length - 3; i++) {
-      if (this.grassPositions[2 * i] != -1) {
+      /*if (this.grassPositions[2 * i] != -1) {
         image(grassSprites[this.grassPositions[2 * i]], this.vectors[i].x * SCALE - grassSprites[this.grassPositions[2 * i]].width / 2, this.vectors[i].y * SCALE - grassSprites[this.grassPositions[
             2 * i]].height /
           2 - 15);
 
 
-      }
+      }*/
       if (this.grassPositions[2 * i + 1] != -1) {
         let tempX = (this.vectors[i].x + this.vectors[i + 1].x) / 2 * SCALE - grassSprites[this.grassPositions[2 * i + 1]].width / 2;
         let tempY = (this.vectors[i].y + this.vectors[i + 1].y) / 2 * SCALE - grassSprites[this.grassPositions[2 * i + 1]].height /
@@ -237,6 +237,8 @@ class Ground {
     }
     return returnList;
   }
+
+  //Points of the brain
   showPoints(x, numberOfPositions, skip) {
     push();
     translate(-panX, -panY);
