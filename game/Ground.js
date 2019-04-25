@@ -120,10 +120,10 @@ class Ground {
 
   show() {
     fill(88, 35, 0);
-    // fill(102, 50, 20);
-    // noStroke();
-    stroke(0, 120, 0);
-    strokeWeight(this.grassThickness * 2);
+    //fill(102, 50, 20);
+    //noStroke();
+    //stroke(0, 120, 0);
+    //strokeWeight(this.grassThickness * 2);
 
     beginShape();
     push();
