@@ -93,7 +93,7 @@ var humanPlaying = false; //true if the user is playing
 
 var fightMode = false; //true when the player is fighting the best every player
 var humanPlayer;
-
+var playerNumber = 0;  //Startnumber of the human player, used for the .json file
 
 var showBrain = false;
 
@@ -294,7 +294,8 @@ function draw() {
             }
         }
     } else
-    if (humanPlaying) { //if the user is controling the ship[
+    if (humanPlaying) { //if the user is controling the ship
+        playerNumber++;
         if (!humanPlayer.dead) { //if the player isnt dead then move and show the player based on input
             otherWorld.Step(1 / 30, 10, 10);
 
@@ -303,7 +304,7 @@ function draw() {
             humanPlayer.look();
 
         } else { //once done return to ai
-            let sc = "{\"name\": \"" + Math.random() + "\", \"score\": \"" + humanPlayer.score + "\"}";
+            let sc = "{\"Spieler\": \"" + this.playerNumber + "\", \"score\": \"" + humanPlayer.score + "\"}";
             var request = new XMLHttpRequest();
             request.open('POST', 'http://localhost:3000/posts',true);          //should store the player scores in the score.json file
             request.setRequestHeader("Content-Type", "application/json");
