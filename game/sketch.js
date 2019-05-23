@@ -268,9 +268,9 @@ function draw() {
         return;
     }
     shownGround = false;
-    drawToScreen();
     nextPanX = -100;
 
+    image(skySprite, 0, 0);
 
     // world.Step(1 / 30, 10, 10);
 
@@ -380,6 +380,8 @@ function draw() {
 
     }
 
+    drawBrain();
+    writeInfo();
 }
 
 
@@ -387,7 +389,6 @@ function draw() {
 //draws the display screen
 function drawToScreen() {
     if (!showNothing) {
-        // background(120, 200, 255);
         image(skySprite, 0, 0);
 
 
