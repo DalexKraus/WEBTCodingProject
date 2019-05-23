@@ -282,17 +282,16 @@ ol {
     background-color: #69696933;
 }
 
-#game{
-    margin: 0;
+#game {
     padding: 0;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 80px;
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
 }
 
-#p5_loading{
+#p5_loading {
     text-align: right;
     color: black;
     position: fixed;
