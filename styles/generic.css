@@ -285,7 +285,11 @@ ol {
 #game {
     padding: 0;
     margin-left: 20px;
+<<<<<<< HEAD
     margin-top: 80px;
+=======
+    margin-top: 70px;
+>>>>>>> c711b3da04f99f085c993c86e64eb907d07c1814
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
