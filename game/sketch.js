@@ -223,7 +223,6 @@ function setup() {
     canvas.parent("canvas");
     frameRate(60); //changes the framerate
 
-
     groundTemplate = new Ground();
     groundTemplate.randomizeGround();
 
@@ -231,7 +230,6 @@ function setup() {
         groundTemplate = new Ground();
         groundTemplate.randomizeGround();
     }
-
 
     for (var i = 0; i < numberOfWorlds; i++) {
         let tempWorld = new b2World(new Vec2(0, 10), true);
@@ -535,10 +533,7 @@ function keyPressed() {
                 humanPlayer = humanPlayer.cloneForReplay();
                 humanPlayer.addToWorld();
             }
-
             break;
-
-
         case 'S':
             pause = !pause;
             break;
@@ -616,7 +611,7 @@ function getFreeWorld() {
 }
 
 function newWorlds() {
-    console.log("New WOrld");
+    console.log("New World");
     console.log(groundTemplate.vectors);
     groundTemplate = new Ground();
     groundTemplate.randomizeGround();

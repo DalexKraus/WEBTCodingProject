@@ -169,21 +169,16 @@ class Car {
     textSize(15);
     stroke(255, 255, 255, 20);
     strokeWeight(1);
-    // text(this.number, 0, 7);
+    //text(this.number, 0, 7);
     pop();
 
     var tempPanX = x - this.startingPosition.x;
     if (nextPanX < tempPanX && (!fightMode || this.player == humanPlayer || humanPlayer.dead)) {
       nextPanX = tempPanX;
     }
-
-    // panY = y - canvas.height / 2;
-
-
   }
 
   update() {
-
     let x = this.chassisBody.GetPosition().x * SCALE;
     let y = this.chassisBody.GetPosition().y * SCALE;
     this.changeCount++;
@@ -208,10 +203,7 @@ class Car {
       // reset = true;
       // resetCounter = 10;
     }
-
   }
-
-
 
   motorOn(forward) {
     var motorSpeed = 13;
@@ -222,34 +214,25 @@ class Car {
       this.motorState = 1;
       this.wheels[0].joint.SetMotorSpeed(-motorSpeed * PI);
       this.wheels[1].joint.SetMotorSpeed(-motorSpeed * PI);
-
       this.chassisBody.ApplyTorque(-this.rotationTorque);
-
-
     } else {
       this.motorState = -1;
       this.wheels[0].joint.SetMotorSpeed(motorSpeed * PI);
       this.wheels[1].joint.SetMotorSpeed(motorSpeed * PI);
-
-      // this.chassisBody.ApplyTorque(this.rotationTorque);
-
     }
     if (oldState + this.motorState == 0) {
       if (oldState == 1) {
         this.applyTorque(this.motorState * -1);
       }
-      // this.chassisBody.ApplyTorque(this.motorState * (-1) * this.rotationTorque);
     }
-    // this.chassisBody.ApplyTorque(this.motorState * (-1) * this.rotationTorque);
-    // //console.log(this.wheels[0].joint);
     this.wheels[0].joint.SetMaxMotorTorque(700);
     this.wheels[1].joint.SetMaxMotorTorque(350);
-    // //console.log(this.wheels[0].rimBody.GetAngle() - this.chassisBody.GetAngle());
   }
 
   applyTorque(direction) {
     this.chassisBody.ApplyTorque(direction * this.rotationTorque);
   }
+
   motorOff() {
     switch (this.motorState) {
       case 1:
@@ -261,7 +244,4 @@ class Car {
     this.wheels[0].joint.EnableMotor(false);
     this.wheels[1].joint.EnableMotor(false);
   }
-
-
-
 }

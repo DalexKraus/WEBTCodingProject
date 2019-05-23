@@ -14,18 +14,12 @@ class Person {
     revJointDef.Initialize(this.head.body, this.torso.body, jointPos);
     this.headJoint = this.world.CreateJoint(revJointDef);
 
-
-
     var distJointDef = new b2DistanceJointDef();
     var anchorTorso = new Vec2(x / SCALE, (y) / SCALE);
     var anchorHead = new Vec2(x / SCALE, this.head.startingPosition.y / SCALE);
     distJointDef.Initialize(this.head.body, this.torso.body, anchorHead, anchorTorso);
     this.distJoint = this.world.CreateJoint(distJointDef);
-
-
-
   }
-
 
   show() {
     this.head.show();
@@ -33,7 +27,6 @@ class Person {
   }
 
 }
-
 
 class Head {
   constructor(x, y, r, world) {
@@ -68,7 +61,6 @@ class Head {
     filtData.categoryBits = PERSON_CATEGORY;
     filtData.maskBits = PERSON_MASK;
     this.body.CreateFixture(fixDef).SetFilterData(filtData);
-
   }
 
   show() {
@@ -101,9 +93,8 @@ class Torso {
     this.body;
     this.colour = color(0, 0, 0);
     this.makeBody();
-
-
   }
+
   makeBody() {
     let bodyDef = new b2BodyDef();
     bodyDef.type = b2DynamicBody;
@@ -126,12 +117,9 @@ class Torso {
     filtData.categoryBits = PERSON_CATEGORY;
     filtData.maskBits = PERSON_MASK;
     this.body.CreateFixture(fixDef).SetFilterData(filtData);
-
   }
 
-
   show() {
-
     let x = this.body.GetPosition().x * SCALE;
     let y = this.body.GetPosition().y * SCALE;
     let angle = this.body.GetAngle();
@@ -148,6 +136,4 @@ class Torso {
     pop();
 
   }
-
-
 }

@@ -120,14 +120,15 @@ class Ground {
 
   show() {
     fill(88, 35, 0);
-    //fill(102, 50, 20);
-    //noStroke();
-    //stroke(0, 120, 0);
-    //strokeWeight(this.grassThickness * 2);
+    fill(102, 50, 20);
+    noStroke();
+    stroke(0, 120, 0);
+    strokeWeight(this.grassThickness * 2);
 
     beginShape();
     push();
     translate(-panX, -panY);
+    console.log("POSX: " + -panX);
 
     for (var i = 0; i < this.vectors.length - 3; i++) {
       /*if (this.grassPositions[2 * i] != -1) {
@@ -137,6 +138,7 @@ class Ground {
 
 
       }*/
+
       if (this.grassPositions[2 * i + 1] != -1) {
         let tempX = (this.vectors[i].x + this.vectors[i + 1].x) / 2 * SCALE - grassSprites[this.grassPositions[2 * i + 1]].width / 2;
         let tempY = (this.vectors[i].y + this.vectors[i + 1].y) / 2 * SCALE - grassSprites[this.grassPositions[2 * i + 1]].height /
@@ -144,6 +146,8 @@ class Ground {
         image(grassSprites[this.grassPositions[2 * i + 1]], tempX, tempY);
       }
     }
+
+
     for (var i = 0; i < this.vectors.length - 2; i++) {
       vertex(this.vectors[i].x * SCALE, this.vectors[i].y * SCALE);
     }
@@ -155,7 +159,7 @@ class Ground {
 
     strokeWeight(3);
     stroke(66, 60, 0);
-    // fill(0, 200, 0);
+    //fill(0, 200, 0);
     for (var i = 0; i < this.vectors.length - 3; i++) {
       line(this.vectors[i].x * SCALE, (this.vectors[i].y) * SCALE + 9, this.vectors[i + 1].x * SCALE, (this.vectors[i + 1].y) * SCALE + 9);
     }
@@ -165,12 +169,8 @@ class Ground {
       line(this.vectors[i].x * SCALE, (this.vectors[i].y) * SCALE + 6, this.vectors[i + 1].x * SCALE, (this.vectors[i + 1].y) * SCALE + 6);
     }
 
-
-
     strokeWeight(3);
     stroke(0, 140, 0);
-    //
-
 
     for (var i = 0; i < this.vectors.length - 3; i++) {
       line(this.vectors[i].x * SCALE, (this.vectors[i].y) * SCALE - 5, this.vectors[i + 1].x * SCALE, (this.vectors[i + 1].y) * SCALE - 5);
@@ -178,10 +178,10 @@ class Ground {
     stroke(0, 130, 0);
 
     for (var i = 0; i < this.vectors.length - 3; i++) {
-      // if (this.grassPositions[i] != -1) {
-      //   image(grassSprites[this.grassPositions[i]], this.vectors[i].x * SCALE - grassSprites[this.grassPositions[i]].width / 2, this.vectors[i].y * SCALE - grassSprites[this.grassPositions[i]].height /
-      //     2 - 15);
-      // }
+       if (this.grassPositions[i] != -1) {
+         image(grassSprites[this.grassPositions[i]], this.vectors[i].x * SCALE - grassSprites[this.grassPositions[i]].width / 2, this.vectors[i].y * SCALE - grassSprites[this.grassPositions[i]].height /
+         2 - 15);
+       }
       line(this.vectors[i].x * SCALE, (this.vectors[i].y) * SCALE - 3, this.vectors[i + 1].x * SCALE, (this.vectors[i + 1].y) * SCALE - 3);
     }
     strokeWeight(1);
