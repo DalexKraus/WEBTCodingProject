@@ -470,11 +470,23 @@ function writeInfo() {
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 
 function keyPressed() {
+    key = key.toUpperCase();
     switch (key) {
+        case 'F':
+            if (population.gen != 1) {
+
+                fightMode = !fightMode;
+                population.bestPlayer = population.bestPlayer.cloneForReplay();
+                humanPlayer = humanPlayer.cloneForReplay();
+                if (fightMode) {
+                    humanPlayer.addToWorld();
+                    population.bestPlayer.addToWorld();
+                }
+            }
+            break;
         case ' ':
             //toggle showBest
             showBest = !showBest;
-            break;
             // case '+': //speed up frame rate
             //   speed += 10;
             //   frameRate(speed);
@@ -482,24 +494,11 @@ function keyPressed() {
             //   break;
             // case '-': //slow down frame rate
             //   if(speed > 10) {
-            //     speed -= 10;
+                //     speed -= 10;
             //     frameRate(speed);
             //     prvarln(speed);
             //   }
             //   break;
-        case 'F':
-            if (population.gen != 1) {
-
-                fightMode = !fightMode;
-                population.bestPlayer = population.bestPlayer.cloneForReplay();
-                humanPlayer = humanPlayer.cloneForReplay();
-
-                if (fightMode) {
-                    humanPlayer.addToWorld();
-                    population.bestPlayer.addToWorld();
-
-                }
-            }
             break;
         case 'B': //run the best
             if (population.gen != 1) {
